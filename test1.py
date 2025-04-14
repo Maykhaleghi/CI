@@ -2,6 +2,10 @@
 from algorithms.base_algorithm import BaseAlgorithm
 
 class PSOAlgorithm(BaseAlgorithm):
+    # algorithms/base_algorithm.py
+class BaseAlgorithm:
+    def run(self):
+        raise NotImplementedError("Subclasses must implement this method")
     def __init__(self, num_particles, c1, c2):
         self.num_particles = num_particles
         self.c1 = c1
